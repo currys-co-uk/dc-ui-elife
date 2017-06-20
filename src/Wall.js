@@ -1,3 +1,5 @@
-function Wall() {}
+class Wall {
+
+}
 
 module.exports = Wall;

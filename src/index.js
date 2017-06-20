@@ -1,3 +1,13 @@
-import electronicLife from './electronicLife.js';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import * as constants from './config/constants';
+import LifeLakeWorld from './components/LifeLikeWorld';
 
-electronicLife(document.getElementById('app'));
+
+ReactDOM.render(
+  <div>
+    <LifeLakeWorld elements={constants.ELEMENTS} plan={constants.PLAN} />
+  </div>,
+    document.getElementById('app'),
+
+);

@@ -1,34 +1,50 @@
-import Vector from '../worldElements/vector';
+import Wall from '../Wall';
+import Plant from '../Plant';
+import Tiger from '../Tiger';
+import PlantEater from '../PlantEater';
+import GridState from '../GridState';
 
 export const DIRECTIONS = {
-  n: new Vector(0, -1),
-  ne: new Vector(1, -1),
-  e: new Vector(1, 0),
-  se: new Vector(1, 1),
-  s: new Vector(0, 1),
-  sw: new Vector(-1, 1),
-  w: new Vector(-1, 0),
-  nw: new Vector(-1, -1),
+  n: GridState.createGridCell(0, -1),
+  ne: GridState.createGridCell(1, -1),
+  e: GridState.createGridCell(1, 0),
+  se: GridState.createGridCell(1, 1),
+  s: GridState.createGridCell(0, 1),
+  sw: GridState.createGridCell(-1, 1),
+  w: GridState.createGridCell(-1, 0),
+  nw: GridState.createGridCell(-1, -1),
 };
+
+export const ELEMENTS = {
+  '#': Wall,
+  O: PlantEater,
+  '@': Tiger,
+  '*': Plant,
+};
+
 
 export const PLAN =
   ['#################################################',
     '#      O        ####        ****              ###',
-    '#   *     ##              ########        O    ##',
+    '#   *                     #               O    ##',
     '#   *    ##      O O                ****       *#',
-    '#       ##*                     ##########     *#',
+    '#       ##*                     ###    ###     *#',
     '# O    ##***  *         ****                  **#',
-    '#* **  #  *  ***      #########            O  **#',
+    '#* **  #  *  ***      ###   ###            O  **#',
     '#* **  #     *              #   *             **#',
     '#     ##            #   O   #  ***         ######',
     '#*   O       @      #       #   *       O  #    #',
     '#*                   #  ######               ** #',
     '###         ****          ***      @         ** #',
-    '#       O                               O       #',
-    '#   *     ##  ##  ##  ##      O O   ###      *  #',
+    '#       O           O                   O       #',
+    '#   *     ##  ##      ##      O O   ###      *  #',
     '#   **         #          O *       #####  O    #',
     '##  **        #  #   *** ***        ###      ** #',
-    '###               #   *****                 ****#',
+    '#*                   #  ######               ** #',
+    '###         ****          ***      @         ** #',
+    '#       O                               O       #',
+    '#   *     ##      ##  ##      O O   #        *  #',
+    '#   **         #          O *       #   #  O    #',
+    '##  **        #  #   *** ***        # #      ** #',
+    '###               #   *****           O     ****#',
     '#################################################'];
-
-export const DIRECTIONNAMES = 'n ne e se s sw w nw'.split(' ');

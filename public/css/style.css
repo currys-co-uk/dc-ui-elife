@@ -1,0 +1,62 @@
+body {
+    font-family: arial;
+}
+
+h1 {
+    color: #0a76bc;
+}
+
+#app {
+    line-height: 15px;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table td, .point {
+    width:15px;
+    height:15px;
+    float: left;
+    margin: 1px;
+    overflow: hidden;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+table td.wall, .point.wall {
+    background: #4e4a4e;
+}
+
+table td.plant, .point.plant {
+    background: url("../images/green.png");
+}
+
+table td.plantEater, .point.plantEater {
+    background: url("../images/sheep.png");
+}
+
+table td.tiger, .point.tiger {
+    background: url("../images/tiger.png");
+}
+
+ul {
+    padding: 0px;
+    list-style-type: none;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+ul li {
+    display: inline-block;
+    padding-right: 15px;
+}
+
+ul li .point {
+    float: none;
+    position: relative;
+    top: 3px;
+}

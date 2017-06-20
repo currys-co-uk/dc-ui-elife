@@ -13,8 +13,25 @@ module.exports = function (config) {
       devtool: 'inline-source-map',
       module: {
         loaders: [
-          { test: /\.js$/, loader: 'babel-loader' },
+          {
+            test: /\.js$/,
+            loader: 'babel-loader',
+            query: {
+              presets: ['airbnb'],
+            },
+          },
         ],
+      },
+      externals: {
+        cheerio: 'window',
+        'react/addons': true,
+        'react/lib/ExecutionEnvironment': true,
+        'react/lib/ReactContext': true,
+      },
+    },
+    babelPreprocessor: {
+      options: {
+        presets: ['airbnb'],
       },
     },
     webpackServer: {

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import GridRow from './GridRow';
+import GridRow from './gridRow';
 
 class Grid extends Component {
   constructor(props) {

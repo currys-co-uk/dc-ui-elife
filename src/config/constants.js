@@ -1,8 +1,8 @@
-import Wall from '../Wall';
-import Plant from '../Plant';
-import Tiger from '../Tiger';
-import PlantEater from '../PlantEater';
-import GridState from '../GridState';
+import Wall from '../elements/wall/wall';
+import Plant from '../elements/plant/plant';
+import Tiger from '../elements/tiger/tiger';
+import PlantEater from '../elements/plantEater/plantEater';
+import GridState from '../gridState';
 
 export const DIRECTIONS = {
   n: GridState.createGridCell(0, -1),
@@ -26,7 +26,7 @@ export const ELEMENTS = {
 export const PLAN =
   ['#################################################',
     '#      O        ####        ****              ###',
-    '#   *                     #               O    ##',
+    '#   *                                     O    ##',
     '#   *    ##      O O                ****       *#',
     '#       ##*                     ###    ###     *#',
     '# O    ##***  *         ****                  **#',
@@ -34,17 +34,17 @@ export const PLAN =
     '#* **  #     *              #   *             **#',
     '#     ##            #   O   #  ***         ######',
     '#*   O       @      #       #   *       O  #    #',
-    '#*                   #  ######               ** #',
+    '#*                  #   ######               ** #',
     '###         ****          ***      @         ** #',
     '#       O           O                   O       #',
-    '#   *     ##  ##      ##      O O   ###      *  #',
-    '#   **         #          O *       #####  O    #',
-    '##  **        #  #   *** ***        ###      ** #',
-    '#*                   #  ######               ** #',
+    '#   *     ######      ##      O O   ###      *  #',
+    '#   **                    O *       #####  O    #',
+    '##  **        ####   *** ***        ###      ** #',
+    '#*                      ######               ** #',
     '###         ****          ***      @         ** #',
     '#       O                               O       #',
     '#   *     ##      ##  ##      O O   #        *  #',
-    '#   **         #          O *       #   #  O    #',
-    '##  **        #  #   *** ***        # #      ** #',
-    '###               #   *****           O     ****#',
+    '#   **                    O *       #      O    #',
+    '##  **        ####   *** ***        #        ** #',
+    '###                   *****           O     ****#',
     '#################################################'];

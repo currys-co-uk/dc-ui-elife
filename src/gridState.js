@@ -1,6 +1,6 @@
 import * as helpers from './config/helpers';
 import * as constants from './config/constants';
-import View from './View';
+import View from './view';
 
 class GridState {
   constructor(plan, elements) {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Grid from './Grid';
-import GridState from '../GridState';
-import LifeChart from './LifeChart.js';
+import Grid from './grid';
+import GridState from '../gridState';
+import LifeChart from './lifeChart.js';
 
 class LifeLakeWorld extends Component {
   constructor(props) {

@@ -3,7 +3,13 @@ body {
 }
 
 h1 {
-    color: #0a76bc;
+    color: #1e3548;
+    margin:0px;
+}
+
+#wrapper {
+    width: 835px;
+    text-align: center;
 }
 
 #app {
@@ -18,10 +24,10 @@ table {
 }
 
 table td, .point {
-    width:15px;
-    height:15px;
+    width:17px;
+    height:17px;
     float: left;
-    margin: 1px;
+    margin: 0px;
     overflow: hidden;
     display: inline-block;
     box-sizing: border-box;
@@ -32,22 +38,28 @@ table td.wall, .point.wall {
 }
 
 table td.plant, .point.plant {
-    background: url("../images/green.png");
+    background: url("../images/green.png") no-repeat center;
 }
 
 table td.plantEater, .point.plantEater {
-    background: url("../images/sheep.png");
+    background: url("../images/sheep.png") no-repeat center;
 }
 
 table td.tiger, .point.tiger {
-    background: url("../images/tiger.png");
+    background: url("../images/tiger.png") no-repeat center;
+}
+
+table td.wall, .point.wall {
+    background: url("../images/wall.png") no-repeat center;
 }
 
 ul {
-    padding: 0px;
+    padding: 10px;
+    background: #e7e7e7;
     list-style-type: none;
     font-size: 13px;
     line-height: 20px;
+    margin: 0px;
 }
 
 ul li {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { VictoryPie } from 'victory';
-import Plant from '../Plant';
-import Tiger from '../Tiger';
-import PlantEater from '../PlantEater';
+import Plant from '../elements/plant/plant';
+import Tiger from '../elements/tiger/tiger';
+import PlantEater from '../elements/plantEater/plantEater';
 
 class LifeChart extends Component {
   constructor(props) {
@@ -28,8 +28,10 @@ class LifeChart extends Component {
     return (
       <VictoryPie
         colorScale={'heatmap'}
-        padding={30}
-        height={180}
+        padding={13}
+        height={80}
+        innerRadius={15}
+        labelRadius={30}
         style={{
           labels: { fontSize: 9 },
           parent: { border: '2px solid #fff' },

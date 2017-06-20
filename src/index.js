@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as constants from './config/constants';
-import LifeLakeWorld from './components/LifeLikeWorld';
+import LifeLakeWorld from './components/lifeLikeWorld';
 
 
 ReactDOM.render(

@@ -1,6 +1,6 @@
 import * as constants from './config/constants';
 import * as helpers from './config/helpers';
-import GridState from './GridState';
+import GridState from './gridState';
 
 
 class View {
